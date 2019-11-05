@@ -1,0 +1,14 @@
+<base href="/">
+
+<nav class="navbar sticky-top navbar-light bg-light justify-content-end nav-pills">
+  <a class="navbar-brand" routerLink="">
+    LOGO
+  </a> 
+  <a class="nav-link" routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+  <a class="nav-link" routerLink="/blog" routerLinkActive="active">Blog</a>
+  <a class="nav-link" routerLink="/about-us" routerLinkActive="active">About us</a>
+</nav>
+
+<div class="container mt-5">
+  <router-outlet></router-outlet>
+</div>
