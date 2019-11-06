@@ -6,3 +6,9 @@
   background: linear-gradient(90deg, rgba(30,48,124,1) 0%, rgba(0,61,255,1) 55%, rgba(0,123,255,1) 100%);
   border: none;
 }
+@media (max-width: 500px) {
+  .navbar-brand {
+    width: 100%;
+    text-align: center;
+  }
+}
