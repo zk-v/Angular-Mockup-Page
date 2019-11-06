@@ -16,6 +16,8 @@ import { FooterComponent } from './footer/footer.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { ContactUsComponent } from './contact/contact-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { FormComponent } from './form/form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
 {
@@ -45,8 +47,9 @@ const appRoutes: Routes = [
 }
 ];
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes), NgbModule, HttpClientModule],
-  declarations: [ AppComponent, AboutUsComponent, DataComponent, HomeComponent, BlogComponent, FooterComponent, JumbotronComponent, ContactUsComponent, GalleryComponent ],
+  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes), NgbModule, HttpClientModule, FormsModule,
+        ReactiveFormsModule],
+  declarations: [ AppComponent, AboutUsComponent, DataComponent, HomeComponent, BlogComponent, FooterComponent, JumbotronComponent, ContactUsComponent, GalleryComponent, FormComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule {
