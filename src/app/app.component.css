@@ -1,3 +1,15 @@
 .navbar-brand {
   margin-right: auto;
 }
+.page-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.content-wrapper {
+  flex-grow: 1;
+}
+.footer {
+  min-height: 2.5rem;
+  flex-grow: 0;
+}

@@ -12,6 +12,8 @@ import { BlogComponent } from './blog/blog.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
 
 const appRoutes: Routes = [
 {
@@ -34,7 +36,7 @@ const appRoutes: Routes = [
 ];
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes), NgbModule, HttpClientModule],
-  declarations: [ AppComponent, AboutUsComponent, DataComponent, HomeComponent, BlogComponent ],
+  declarations: [ AppComponent, AboutUsComponent, DataComponent, HomeComponent, BlogComponent, FooterComponent, JumbotronComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule {
