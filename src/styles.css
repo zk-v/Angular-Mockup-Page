@@ -1,2 +1,8 @@
 /* Add application styles & imports to this file! */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+.btn-primary {
+  background: rgb(30,48,124);
+  background: linear-gradient(90deg, rgba(30,48,124,1) 0%, rgba(0,61,255,1) 55%, rgba(0,123,255,1) 100%);
+  border: none;
+}

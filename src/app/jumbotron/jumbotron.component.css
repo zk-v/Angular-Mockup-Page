@@ -1,5 +1,14 @@
 .jumbotron {
-  background-image: url("https://picsum.photos/1200/1200");
+  background-image: url("https://picsum.photos/id/299/1200/1200?grayscale");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.jumbotron > * {
+  color: white !important;
+}
+.jumbotron div {
+  background: rgba(0, 0, 0, 0.5);
+}
+hr {
+    border-top: 1px solid rgb(136, 136, 136);
 }
