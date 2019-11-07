@@ -16,6 +16,7 @@ import { ContactUsComponent } from './contact/contact-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FormComponent } from './form/form.component';
 import { ApiDataService } from './api-data.service';
+import { ApiDataComponent } from './api-data/api-data.component';
 
 
 const appRoutes: Routes = [
@@ -48,7 +49,7 @@ const appRoutes: Routes = [
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes), NgbModule, HttpClientModule, FormsModule,
         ReactiveFormsModule],
-  declarations: [ AppComponent, AboutUsComponent, DataComponent, HomeComponent, BlogComponent, FooterComponent, JumbotronComponent, ContactUsComponent, GalleryComponent, FormComponent ],
+  declarations: [ AppComponent, AboutUsComponent, DataComponent, HomeComponent, BlogComponent, FooterComponent, JumbotronComponent, ContactUsComponent, GalleryComponent, FormComponent, ApiDataComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ApiDataService]
 })

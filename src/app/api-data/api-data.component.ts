@@ -1,10 +1,16 @@
+import { Component, OnInit } from '@angular/core';
 import { Injectable, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Data } from './data';
 import 'rxjs/add/operator/toPromise';
 
+@Component({
+  selector: 'app-api-data',
+  templateUrl: './api-data.component.html',
+  styleUrls: ['./api-data.component.css']
+})
+
 @Injectable()
-export class ApiDataService {
+export class ApiDataComponent implements OnInit {
   apiUrl = 'https://swapi.co/api/';
   results;
 
