@@ -22,7 +22,7 @@ export class FormComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log("submited");
+    alert("Thank you for sending the message. Somebody will contact you shortly.")
   }
 
 }

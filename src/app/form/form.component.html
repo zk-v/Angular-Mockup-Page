@@ -1,4 +1,4 @@
-<div class="container">
+<div>
   <form class="mt-3" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="firstName">Name</label>
@@ -17,8 +17,6 @@
       <label for="message">Your message</label>
       <textarea class="form-control" id="email"></textarea>
     </div>
-    
-
     <div class="form-group">
       <input type="submit" class="form-submit" value="Submit" class="btn btn-primary btn-lg">
     </div>
