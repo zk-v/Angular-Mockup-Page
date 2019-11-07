@@ -12,7 +12,7 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class ApiDataComponent implements OnInit {
   apiUrl = 'https://swapi.co/api/people';
-  results;
+  fetchedData;
 
   constructor(private http: HttpClient) {}
 
@@ -22,8 +22,8 @@ export class ApiDataComponent implements OnInit {
     .get(this.apiUrl)
     .subscribe(data => {
       // Read the result field from the JSON response.
-      this.results = data['results'];
-      console.log(data);
+      this.fetchedData = data['results'];
+      console.log(this.fetchedData[0]);
     })
  }
 }
