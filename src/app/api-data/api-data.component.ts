@@ -11,7 +11,7 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class ApiDataComponent implements OnInit {
-  apiUrl = 'https://swapi.co/api/';
+  apiUrl = 'https://swapi.co/api/people';
   results;
 
   constructor(private http: HttpClient) {}
