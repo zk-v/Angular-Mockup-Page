@@ -23,7 +23,7 @@ export class ApiDataComponent implements OnInit {
     .subscribe(data => {
       // Read the result field from the JSON response.
       this.fetchedData = data['results'];
-      console.log("Fetched" + this.fetchedData);
+      console.log(this.fetchedData);
     })
  }
 }
