@@ -15,7 +15,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { ContactUsComponent } from './contact/contact-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FormComponent } from './form/form.component';
-
+import { ApiDataService } from './api-data.service';
 
 
 const appRoutes: Routes = [
@@ -49,7 +49,8 @@ const appRoutes: Routes = [
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes), NgbModule, HttpClientModule, FormsModule,
         ReactiveFormsModule],
   declarations: [ AppComponent, AboutUsComponent, DataComponent, HomeComponent, BlogComponent, FooterComponent, JumbotronComponent, ContactUsComponent, GalleryComponent, FormComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [ApiDataService]
 })
 export class AppModule {
   
