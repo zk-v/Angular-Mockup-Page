@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -17,6 +18,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { FormComponent } from './form/form.component';
 import { ApiDataService } from './api-data.service';
 import { ApiDataComponent } from './api-data/api-data.component';
+import { OffersComponent } from './offers/offers.component';
 
 
 const appRoutes: Routes = [
@@ -48,8 +50,8 @@ const appRoutes: Routes = [
 ];
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes), NgbModule, HttpClientModule, FormsModule,
-        ReactiveFormsModule],
-  declarations: [ AppComponent, AboutUsComponent, DataComponent, HomeComponent, BlogComponent, FooterComponent, JumbotronComponent, ContactUsComponent, GalleryComponent, FormComponent, ApiDataComponent ],
+        ReactiveFormsModule, FontAwesomeModule],
+  declarations: [ AppComponent, AboutUsComponent, DataComponent, HomeComponent, BlogComponent, FooterComponent, JumbotronComponent, ContactUsComponent, GalleryComponent, FormComponent, ApiDataComponent, OffersComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ApiDataService]
 })
