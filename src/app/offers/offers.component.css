@@ -1,3 +1,17 @@
 .card {
   border: none;
 }
+span {
+  background: linear-gradient(90deg, rgba(30,48,124,1) 0%, rgba(0,61,255,1) 55%, rgba(0,123,255,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 100%;
+  margin: auto;
+}
+.ng-fa-icon {
+  font-size: 2rem;
+  color: white;
+}

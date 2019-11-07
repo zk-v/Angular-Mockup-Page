@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faBook, faCar } from '@fortawesome/free-solid-svg-icons';
+import { faCubes, faDatabase, faFlask } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-offers',
@@ -7,7 +7,9 @@ import { faBook, faCar } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./offers.component.css']
 })
 export class OffersComponent implements OnInit {
-  faCar = faCar;
+  faDatabase = faDatabase;
+  faCubes = faCubes;
+  faFlask = faFlask;
 
   constructor() { }
 
